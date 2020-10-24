@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="CapaPresentacion.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Styles/Styles.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/fonts.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">    
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="Componentes">
+    <form id="form1" runat="server">
+        <div class="fondo">
+            <p>RINCÓN GUATEMALTECO</p>
+        </div>
+        <div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="Inicio.aspx"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+                        <li><a href="#"><span class="segundo"><i class="icon icon-hammer"></i></span>Mantenimiento</a>
+                            <ul>
+                                <li><a href="IntProducto.aspx">Productos</a></li>
+                                <li><a href="IntCliente.aspx">Clientes</a></li>
+                                <li><a href="IntProveedor.aspx">Proveedores</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="tercero"><i class="icon icon-truck"></i></span>Negocio</a>
+                            <ul>                                
+                                <li><a href="NuevaVenta.aspx">Ventas</a></li>
+                                <li><a href="NuevoPedido.aspx">Pedidos</a></li>
+                                <li><a href="Devoluciones.aspx">Devoluciones</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="cuarto"><i class="icon icon-paragraph-left"></i></span>Reportes</a>
+                            <ul>                                
+                                <li><a href="ReporteVentas.aspx">Ventas</a></li>
+                                <li><a href="ReporteDevoluciones.aspx">Devoluciones</a></li>
+                                <li><a href="ReporteClientes.aspx">Clientes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="quinto"><i class="icon icon-mobile"></i></span>Opciones</a>
+                            <ul>                                
+                                <li><a href="CierreCaja.aspx">Cierre de Caja</a></li>
+                                <li><a href="#">Contacto</a></li>
+                                <li><a href="#">Acerca de</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <br />            
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer>Alejandro Rodríguez</footer>    
+    </form>
+    
+</body>
+</html>
